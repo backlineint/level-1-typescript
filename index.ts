@@ -18,9 +18,16 @@ const tablet: any = 3;
 
 // Functions in TypeScript
 
-const sayWord = (word: string): string => {
-  console.log(word);
+// const sayWord = (word?: string): string => { // ? makes parameter optional
+//   console.log(word || 'Hello');
+//   return word || 'Hello' ;
+// }
+
+// Default Params
+const sayWord = (word = 'Hello', ...otherStuff: string[]): string => { // ? makes parameter optional
+  console.log(word, otherStuff);
   return word;
 }
 
-sayWord('Brian');
+sayWord('Brian', 'Scott');
+sayWord();
