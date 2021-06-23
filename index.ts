@@ -15,3 +15,12 @@ const phone: any = 'iPhone';
 const tablet: any = 3;
 
 // Other types: null, undefined, never, object
+
+// Functions in TypeScript
+
+const sayWord = (word: string): string => {
+  console.log(word);
+  return word;
+}
+
+sayWord('Brian');
