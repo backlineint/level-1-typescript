@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "parcel-bundler": "^1.12.5",
+    "parcel-bundler": "1.9.4",
+    "parcel-plugin-typescript": "^1.0.0",
     "typescript": "^4.3.4"
   },
   "name": "@backlineint/level-1-typescript",
