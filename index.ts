@@ -39,3 +39,27 @@ newName = 'Scott';
 
 let newNameTwo = newName;
 newName = 'Gary';
+
+// Union types with |
+let newerName: string | number = 'Brian';
+newerName = 'Scott';
+newerName = 10;
+
+let newerNameTwo = newerName;
+newerName = 20;
+
+const makeMargin = (x: string | number): string => {
+  return `margin: ${x}px`;
+}
+
+makeMargin(10);
+makeMargin('brian');
+// makeMargin(false); // Will error
+
+// Null Types - type checker assumes null and undefined are assignable to anything.
+let dog: string;
+dog = null;
+// Could enable strict null checking if you don't want to allow null by default.
+
+dog = 'ruger';
+dog = null;
