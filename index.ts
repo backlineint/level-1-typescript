@@ -31,3 +31,11 @@ const sayWord = (word = 'Hello', ...otherStuff: string[]): string => { // ? make
 
 sayWord('Brian', 'Scott');
 sayWord();
+
+// Implicit Types
+let newName = 'Brian';
+newName = 'Scott';
+// newName = 10; // will error because implicit type is a string.
+
+let newNameTwo = newName;
+newName = 'Gary';
