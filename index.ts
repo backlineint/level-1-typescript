@@ -110,3 +110,25 @@ createContent2(Type2.Quiz);
 // createContent2('QUIZ');
 
 console.log('Type2', Type2.Quiz);
+
+// Classes
+
+class Team {
+  teamName: string;
+  // public teamName: string; this is the same as above
+  // private teamName: string; prevents outside usage
+  //  readonly teamName: string; prevents from being changed
+
+  constructor(teamName) {
+    this.teamName = teamName;
+  }
+
+  score(): string {
+    console.log(this.teamName);
+    return 'goal';
+  }
+}
+
+const redWings = new Team('Red Wings');
+redWings.score();
+redWings.teamName;
