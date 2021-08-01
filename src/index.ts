@@ -1,5 +1,5 @@
-import { Person } from './src/interfaces';
-import Job, { Type2 } from './src/enums';
+import { Person } from './interfaces';
+import Job, { Type2 } from './enums';
 
 const isOpen: boolean = false;
 
