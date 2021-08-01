@@ -1,3 +1,6 @@
+import { Person } from './src/interfaces';
+import Job, { Type2 } from './src/enums';
+
 const isOpen: boolean = false;
 
 const myName: string = 'Scott';
@@ -8,7 +11,6 @@ const list: number[] = [0,1,2];
 // Tuple
 const me: [string, number, boolean] = ['Brian', 41, false];
 
-enum Job { WebDev, WebDesigner, PM }
 const job: Job = Job.WebDev;
 
 const phone: any = 'iPhone';
@@ -64,12 +66,6 @@ dog = null;
 dog = 'ruger';
 dog = null;
 
-// Interfaces
-interface Person {
-  name: string,
-  age?: number // ? optional param
-}
-
 const sayName = ({ name, age }: Person): string => {
   console.log(name);
   return name;
@@ -96,13 +92,6 @@ console.log('Type', Type.Quiz);
 
 const createContent = (contentType: Type) => {}
 createContent(Type.Quiz);
-
-// String Enum
-enum Type2 {
-  Video = 'VIDEO',
-  BlogPost = 'BLOG_POST',
-  Quiz = 'QUIZ'
-}
 
 const createContent2 = (contentType2: Type2) => {}
 createContent2(Type2.Quiz);
